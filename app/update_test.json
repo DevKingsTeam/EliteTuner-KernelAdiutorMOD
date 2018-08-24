@@ -1,13 +1,10 @@
 {
-  "latestVersion": "2.8.0",
-  "latestVersionCode": "280",
-  "url": "https://github.com/morogoku/MTweaks-KernelAdiutorMOD/releases/download/v2.8.0/MTweaks_v2.8.0.apk",
+  "latestVersion": "1.0.0",
+  "latestVersionCode": "100",
+  "url": "https://github.com/DevKingsTeam/MTweaks-KernelAdiutorMOD/releases/download/v1.0.0/EliteTuner_v1.0.0.apk",
   "releaseNotes": [
     "Changelog:",
-    "- Oreo 8.1 compatible",
-    "- Latest Kernel Adiutor changes",
-    "- Update Virtual Memory Settings",
-    "  - Swap & Ram bars",
-    "  - Show all VM tunables availables"
+    "- Initial Release",
+    "- Support Exynos7870"
   ]
 }
