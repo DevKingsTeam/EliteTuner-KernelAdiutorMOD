@@ -40,7 +40,7 @@ android {
     }
     android.applicationVariants.all { final variant ->
         variant.outputs.all {
-            outputFileName = "MTweaks_v${variant.versionName}.apk"
+            outputFileName = "EliteTuner_v${variant.versionName}.apk"
         }
     }
 }
