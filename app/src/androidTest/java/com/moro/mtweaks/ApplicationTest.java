@@ -1,4 +1,4 @@
-package com.moro.mtweaks;
+package com.elite.elitetuner;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

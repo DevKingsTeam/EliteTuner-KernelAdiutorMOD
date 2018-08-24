@@ -8,11 +8,11 @@
         android:shortcutShortLabel="@string/settings">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.moro.mtweaks.activities.MainActivity"
-            android:targetPackage="com.moro.mtweaks">
+            android:targetClass="com.elite.elitetuner.activities.MainActivity"
+            android:targetPackage="com.elite.elitetuner">
             <extra
                 android:name="section"
-                android:value="com.moro.mtweaks.fragments.other.SettingsFragment" />
+                android:value="com.elite.elitetuner.fragments.other.SettingsFragment" />
         </intent>
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
