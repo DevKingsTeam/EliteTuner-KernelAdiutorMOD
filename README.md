@@ -1,16 +1,19 @@
-# MTweaks
+# EliteTuner
 
-It is a Mod of Grarak's [KernelAdiutor](https://github.com/Grarak/KernelAdiutor) for compatibilize to Samsung Exynos.
-Thanks to Willi Ye for this great application.
+A Modified version of Grarak's [KernelAdiutor]&& Morogoku[MTweaks] app to support Exynos7870 Devices
 
-
-## Donation
+## Donation link for Morogoku (Original creator of MTweaks)
 [![PayPal](https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png)](https://paypal.me/morogoku)
+
+## Donation link of myself
+[![PayPal](https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png)](https://paypal.me/ananjaser1211)
 
 ## Credits
 * Willi Ye, author of [KernelAdiutor](https://github.com/Grarak/KernelAdiutor)
+* Morogoku Author of  [MTweaks] (https://github.com/morogoku/MTweaks-KernelAdiutorMOD)
 
-I used following libraries:
+
+ used following libraries:
 
 * Google: [v4 Support Library](https://developer.android.com/topic/libraries/support-library/features.html#v4)
 * Google: [v7 appcompat library](https://developer.android.com/topic/libraries/support-library/features.html#v7)
@@ -47,14 +50,15 @@ _(Many sys interface paths has been taken from his [UKM-Project](https://github.
 
     Copyright (C) 2015-2016 Willi Ye <williye97@gmail.com>
 	Copyright (C) 2017 morogoku <morogoku@hotmail.com>
+	Copyright (C) 2018 ananjaser1211 <ananjaser@gmail.com>
 	
     
-    MTweaks is free software: you can redistribute it and/or modify
+    EliteTuner is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
     
-    MTweaks is distributed in the hope that it will be useful,
+    EliteTuner is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
