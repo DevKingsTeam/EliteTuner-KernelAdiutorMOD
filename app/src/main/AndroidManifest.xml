@@ -30,6 +30,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Default.Pink">
+        <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="d89b7ebb31b3bb0ca514a4171c6af37c7c9579c9" />
