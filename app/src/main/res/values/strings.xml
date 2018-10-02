@@ -10,7 +10,10 @@
     <string name="open">Open %s</string>
     <string name="disable">Disable</string>
     <string name="changelog">EliteTuner v%s</string>
-    <string name="changelog_message">\n* Initial Release\n\n\n</string>
+    <string name="changelog_message">\n* -Exynos5433 Voltage control\n
+-Exynos5433 CPUFREQ Control\n
+-Exynos5433 Battery Control\n
+-Do not install if on 7870\n\n\n</string>
     <string name="close">Close</string>
 
     <!-- Security -->
@@ -1134,12 +1137,12 @@
 
     <!-- About -->
     <!--<string name="about_me">Hi, I\'m Willi Ye aka Grarak, a 19 year old student living in Vienna. I\'ve been developing on Android for quite a long time. Beside Kernel Adiutor I\'m also maintaining LineageOS for few devices and working on ParanoidAndroid. So please understand if I don\'t find the time to update this application.</string>-->
-    <string name="about_me">Hi, I\'m Ananjaser1211, This app is a mod of \"Kernel Adiutor\" of Willi Ye, aka Grarak and \"MTweaks\" of Morogoku . This Fork is mainly focused at supporting Exynos7870 Devices,.</string>
+    <string name="about_me">Hi, I\'m Ananjaser1211, This app is a mod of \"Kernel Adiutor\" of Willi Ye, aka Grarak and \"MTweaks\" of Morogoku . This Fork is mainly focused at supporting Exynos5433/7870 Devices,.</string>
     <string name="libraries_used">Libraries used</string>
 
     <!-- Donation -->
     <string name="donation_title">Donation</string>
-    <string name="donation_summary">EliteTuner is a fork of MTweaks with modifications to support Exy7870 and for the latest Samsung devices. This app is free to use with my kernels and other kernels, donations are welcome through the paypal link</string>
+    <string name="donation_summary">EliteTuner is a fork of MTweaks with modifications to support Exy5433/7870 and for the latest Samsung devices. This app is free to use with my kernels and other kernels, donations are welcome through the paypal link</string>
 
     <!-- Contributors -->
     <string name="commits">%d commits</string>
