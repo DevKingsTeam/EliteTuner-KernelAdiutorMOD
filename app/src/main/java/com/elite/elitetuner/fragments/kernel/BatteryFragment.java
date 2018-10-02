@@ -135,6 +135,7 @@ public class BatteryFragment extends RecyclerViewFragment {
             unsCharge.addItem(uCharge);
         }
 
+
         if (unsCharge.size() > 0) {
             items.add(unsCharge);
         }
@@ -673,13 +674,13 @@ public class BatteryFragment extends RecyclerViewFragment {
         public void onReceive(Context context, Intent intent) {
             mBatteryLevel = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);
             mBatteryVoltage = intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE, 0);
-            mBatteryCurrent = Utils.strToInt(Utils.readFile("/sys/devices/battery/power_supply/battery/current_now"));
-            mBatteryCurrentAvg = Utils.strToInt(Utils.readFile("/sys/devices/battery/power_supply/battery/current_avg"));
+            mBatteryCurrent = Utils.strToInt(Utils.readFile("/sys/devices/battery.30/power_supply/battery/current_now"));
+            mBatteryCurrentAvg = Utils.strToInt(Utils.readFile("/sys/devices/battery.30/power_supply/battery/current_avg"));
             //sBatteryCharType = Utils.readFile("/sys/devices/battery/power_supply/battery/charge_type");
             mBatteryCharSource = mBattery.getS7ChargeSource(context);
             mBatteryTemp = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0) / 10D;
-            mBatteryStatus = Utils.readFile("/sys/devices/battery/power_supply/battery/status");
-            mBatteryHealth = Utils.readFile("/sys/devices/battery/power_supply/battery/health");
+            mBatteryStatus = Utils.readFile("/sys/devices/battery.30/power_supply/battery/status");
+            mBatteryHealth = Utils.readFile("/sys/devices/battery.30/power_supply/battery/health");
             mBatteryHealthValue = mBattery.getHealthValue();
         }
     };
@@ -712,7 +713,7 @@ public class BatteryFragment extends RecyclerViewFragment {
             mStatus.setStat(mBatteryStatus);
         }
         if (mHealth != null) {
-            mHealth.setStat(mBatteryHealth + " / " + mBatteryHealthValue + getString(R.string.percent));
+            mHealth.setStat(mBatteryHealth);
         }
     }
 
