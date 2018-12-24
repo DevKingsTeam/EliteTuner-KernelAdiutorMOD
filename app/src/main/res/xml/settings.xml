@@ -20,20 +20,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="app_update"
-        android:title="@string/app_update_category">
-        <SwitchPreferenceCompat
-            android:key="app_update_notif"
-            android:defaultValue="true"
-            android:title="@string/app_update_notif_title"
-            android:summary="@string/app_update_notif_summary" />
-        <Preference
-            android:key="check_update"
-            android:summary="@string/check_update_summary"
-            android:title="@string/check_update_title" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="user_interface"
         android:title="@string/user_interface">
         <SwitchPreferenceCompat
