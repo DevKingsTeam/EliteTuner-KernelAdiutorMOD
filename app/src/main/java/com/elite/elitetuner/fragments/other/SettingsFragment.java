@@ -53,7 +53,6 @@ import com.elite.elitetuner.activities.NavigationActivity;
 import com.elite.elitetuner.services.boot.ApplyOnBootService;
 import com.elite.elitetuner.utils.AppSettings;
 import com.elite.elitetuner.utils.Themes;
-import com.elite.elitetuner.utils.AppUpdaterTask;
 import com.elite.elitetuner.utils.Utils;
 import com.elite.elitetuner.utils.ViewUtils;
 import com.elite.elitetuner.utils.root.RootUtils;
@@ -72,7 +71,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
 
     private static final String KEY_AD_VIEW = "adview";
     private static final String KEY_RESET_DATA = "reset_data";
-    private static final String KEY_UPDATE_NOTIFICATION = "app_update_notif";
     private static final String KEY_CHECK_UPDATE = "check_update";
     private static final String KEY_FORCE_ENGLISH = "forceenglish";
     private static final String KEY_USER_INTERFACE = "user_interface";
@@ -149,8 +147,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
         }
 */
         findPreference(KEY_RESET_DATA).setOnPreferenceClickListener(this);
-        findPreference(KEY_UPDATE_NOTIFICATION).setOnPreferenceChangeListener(this);
-        findPreference(KEY_CHECK_UPDATE).setOnPreferenceClickListener(this);
         findPreference(KEY_DARK_THEME).setOnPreferenceChangeListener(this);
         findPreference(KEY_BANNER_RESIZER).setOnPreferenceClickListener(this);
         findPreference(KEY_HIDE_BANNER).setOnPreferenceChangeListener(this);
@@ -204,9 +200,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
         boolean checked = (boolean) o;
         String key = preference.getKey();
         switch (key) {
-            case KEY_UPDATE_NOTIFICATION:
-                AppSettings.saveBoolean("show_update_notif", checked, getActivity());
-                return true;
             case KEY_FORCE_ENGLISH:
             case KEY_DARK_THEME:
                 getActivity().finish();
@@ -267,9 +260,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
         switch (key) {
             case KEY_RESET_DATA:
                 resetDataDialog();
-                return true;
-            case KEY_CHECK_UPDATE:
-                AppUpdaterTask.appCheckDialogAllways(getActivity());
                 return true;
             case KEY_BANNER_RESIZER:
                 if (Utils.DONATED) {

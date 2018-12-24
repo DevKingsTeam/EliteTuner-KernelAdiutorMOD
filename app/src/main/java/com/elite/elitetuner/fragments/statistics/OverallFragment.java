@@ -100,9 +100,6 @@ public class OverallFragment extends RecyclerViewFragment {
             requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
         }
 
-        //Initialize AppUpdate check
-        AppUpdaterTask.appCheckDialog(getActivity());
-
         statsInit(items);
         frequenciesInit(items);
     }

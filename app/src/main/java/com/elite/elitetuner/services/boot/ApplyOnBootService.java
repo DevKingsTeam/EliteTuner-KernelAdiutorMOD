@@ -81,9 +81,6 @@ public class ApplyOnBootService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
 
-        //Initialize AppUpdate check
-        AppUpdaterTask.appCheckNotification(this);
-
         //Initialize Boeffla Wakelock Blocker Files
         if(BoefflaWakelock.supported()) {
             BoefflaWakelock.CopyWakelockBlockerDefault();
