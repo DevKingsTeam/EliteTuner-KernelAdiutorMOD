@@ -66,13 +66,9 @@ public class Dt2w {
 
     {
         mLgeTouchCoreMenu.add(R.string.disabled);
-        mLgeTouchCoreMenu.add(R.string.center);
         mLgeTouchCoreMenu.add(R.string.full);
-        mLgeTouchCoreMenu.add(R.string.bottom_half);
-        mLgeTouchCoreMenu.add(R.string.top_half);
 
         mAndroidTouchMenu.add(R.string.disabled);
-        mAndroidTouchMenu.add(R.string.half);
         mAndroidTouchMenu.add(R.string.full);
 
         mGenericMenu.add(R.string.disabled);
