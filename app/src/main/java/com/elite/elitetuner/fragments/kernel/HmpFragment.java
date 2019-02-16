@@ -31,8 +31,8 @@ public class HmpFragment  extends RecyclerViewFragment {
         super.init();
 
         sProfiles.clear();
-        sProfiles.put(R.string.stock, "524 214");
-        sProfiles.put(R.string.battery, "700 256");
+        sProfiles.put(R.string.stock, "700 256");
+        sProfiles.put(R.string.battery, "870 256");
         sProfiles.put(R.string.performance, "430 150");
 
         addViewPagerFragment(ApplyOnBootFragment.newInstance(this));
