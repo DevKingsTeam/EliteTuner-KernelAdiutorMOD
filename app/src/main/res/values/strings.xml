@@ -10,10 +10,9 @@
     <string name="open">Open %s</string>
     <string name="disable">Disable</string>
     <string name="changelog">EliteTuner v%s</string>
-    <string name="changelog_message">\n* -Exynos5433 Voltage control\n
--Exynos5433 CPUFREQ Control\n
--Exynos5433 Battery Control\n
--Do not install if on 7870\n\n\n</string>
+    <string name="changelog_message">\n* -V1.2 \n
+    - DT2W \n
+    - Removed Updater \n</string>
     <string name="close">Close</string>
 
     <!-- Security -->
